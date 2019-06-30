@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:oneshot="false"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+<item android:drawable="@drawable/loadingonew" android:duration="30"></item>
+<item android:drawable="@drawable/loadingtwo" android:duration="30"></item>
+<item android:drawable="@drawable/loadingthree" android:duration="30"></item>
+</animation-list>

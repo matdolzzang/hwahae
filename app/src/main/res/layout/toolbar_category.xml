@@ -1,0 +1,67 @@
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/category_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:background="@color/colorHwaHae"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backdirection"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/logo_nav">
+
+            <TextView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/search"
+                android:text="카테고리별 랭킹"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/categoryDownDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/searchImage"
+                android:src="@drawable/downdirection" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/searchImage"
+                android:src="@drawable/mirror" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
